@@ -38,6 +38,7 @@ def roll(dicepool):
         ##chance die. success only on 10. 10-again
         outcome = [random.randint(1,10)]
         print outcome
+        successes = 0
         if outcome == [1]:
             ##dramatic failure only if you roll 1 on your initial chance roll
             successes = -1
@@ -56,7 +57,8 @@ def roll(dicepool):
             for n in outcome:
                 if n == 10:
                     successes += 1
-        ##else: regular failure
+        ##else: ##regular failure
+        
     return successes
 
 ##def instantAction(dicepool)
